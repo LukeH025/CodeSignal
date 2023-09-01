@@ -3,10 +3,10 @@ Note: sequence a0, a1, ..., an is considered to be a strictly increasing if a0 <
 
 def solution (original_sequence):
     for i in range(0, (len(original_sequence)-1)):
-        if original_sequence[i]>original_sequence[i+1]:
+        if original_sequence[i]>=original_sequence[i+1]:
             if (len(original_sequence)-1)-i>1: 
                 for e in range(i+1, (len(original_sequence)-1)):
-                    if original_sequence[e]>original_sequence[e+1]:
+                    if original_sequence[e]>=original_sequence[e+1]:
                         return False        
                 if i==0:
                     return True
@@ -18,8 +18,5 @@ def solution (original_sequence):
                     return False
     return True
         
-print(solution([10,1,2,3,4,5]))
-print(solution([1,2,3,4, 5 ,3,9]))
-print(solution([4,5,6,1,2,3]))
-print(solution([1,2,4,5,3,6]))
-print(solution([3,5,67,98,3]))
+
+print(solution([1,1,2,3,4,4]))
