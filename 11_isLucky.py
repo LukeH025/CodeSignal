@@ -1,3 +1,4 @@
+"""Given a ticket number n, determine if it's lucky or not.lucky if the sum of the first half of the digits is equal to the sum of the second half"""
 def solution(n):
     mit_longitud=int((len(str(n)))/2)
     n=str(n)
@@ -5,10 +6,10 @@ def solution(n):
     num_sec_s=0
     for i in range(mit_longitud):
         num_sec+=int(n[i])
-        print(num_sec)
         num_sec_s+=int(n[i+mit_longitud])
-        print(num_sec_s)
     if num_sec==num_sec_s:
-        print("s")
+        return True
+    else:
+        return False
     
 solution(124520)
