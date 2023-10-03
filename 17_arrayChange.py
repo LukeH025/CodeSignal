@@ -11,5 +11,4 @@ def solution(string):
             f=i+r
         bol=True
     return e    
-    
-print(solution([2, 1, 10, 1]))
+ 
