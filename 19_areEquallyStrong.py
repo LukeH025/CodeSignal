@@ -1,6 +1,6 @@
 def solution(yourLeft, yourRight, friendsLeft, friendsRight):
     if yourLeft==friendsLeft or yourLeft==friendsRight:
-        if yourRight==friendsRight or yourLeft==friendsLeft:
+        if yourRight+yourLeft==friendsLeft+friendsRight:
             return True
         else:
             return False
