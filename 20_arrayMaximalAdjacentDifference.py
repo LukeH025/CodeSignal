@@ -7,7 +7,7 @@ def solution (array):
         if amplitud<r:
             print(amplitud)
             amplitud=r
-    return r
+    return amplitud
             
 
 
