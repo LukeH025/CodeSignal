@@ -6,7 +6,7 @@ def square_matrix(square):
 			
 	return tot_sum // 9	  
 
-def boxBlur(image): 
+def solution(image): 
 	square = []	 
 	square_row = [] 	
 	blur_row = [] 
@@ -38,4 +38,4 @@ l=[[36,0,18,9,9,45,27],
  [45,45,27,27,90,81,72],
  [45,18,9,0,9,18,45],
  [27,81,36,63,63,72,81]]
-print(boxBlur(l)) 
+print(solution(l)) 
