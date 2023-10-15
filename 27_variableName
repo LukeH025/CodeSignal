@@ -1,0 +1,16 @@
+def solution(name):
+    for i in name:
+        if name[0].isnumeric():
+            return False
+        if i.isnumeric():
+            continue
+        elif i.isalpha():
+            continue
+        elif i=="_":
+            continue
+        else:
+            return False
+    return True
+    
+solution("12sASDASa3")
+
