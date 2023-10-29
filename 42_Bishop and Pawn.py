@@ -3,7 +3,6 @@ def solution(bishop, pawn):
     inicio=(letters.index(bishop[0]))
     final=(letters.index(pawn[0])) 
     dist=final-inicio
-    # print(int(bishop[1])+dist)
     if int(bishop[1])+dist==int(pawn[1]) or int(bishop[1])-dist==int(pawn[1]):
         return True
     else:return False
